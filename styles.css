@@ -1,0 +1,236 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style sections */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Apply a basic styling to the header */
+header {
+    background-color: #0B0E12;
+    color: white;
+    text-align: center;
+    padding: 30px 0; /* Adjust the padding (top and bottom) */
+    height: 208px; /* Set the height */
+}
+
+header div img {
+    max-width: 35%; /* Make sure the image doesn't exceed the container width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    display: block; /* Remove any default inline spacing */
+    margin: 0 auto; /* Center the image horizontally */
+    padding: 0; /* Remove any padding */
+}
+
+img {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    display: block; /* Remove any default inline spacing */
+    margin: 0 auto; /* Center the image horizontally */
+    padding: 0; /* Remove any padding */
+}
+
+/* Style the company name */
+.company-name {
+    color: white;
+    text-decoration: none;
+    margin: 0 6.5rem;
+    font-size: 25px;
+    transition: color 0.3s;
+    display: flex;
+    justify-content: left;
+    align-items: center; /* Vertically align text in the center */
+    height: 208px;
+}
+
+/* Empty div to divide menu into partitions */
+.empty {
+    color: white;
+    text-decoration: none;
+    margin: 0 6.5rem;
+    font-size: 25px;
+    transition: color 0.3s;
+    display: flex;
+    justify-content: left;
+    align-items: center; /* Vertically align text in the center */
+    height: 208px;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0B0E12;
+    color: white;
+}
+
+/* Style the menu bar */
+.menu {
+    background-color: #000307;
+    display: flex;
+    height: 208px;
+}
+
+/* Style the menu links */
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 4rem;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #f39c12; /* Change the color on hover */
+}
+
+.header-link {
+    background-color: #000307;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: center; /* Vertically align text in the center */
+}
+
+.main-content_page3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-content_page3 div {
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    font-size: 50px; /* Set font size to 50px */
+    color: #f39c12;
+    margin: 50px 0 50px 0; /* Set the margin left and right */ 
+}
+
+/* CSS for the columns */
+.columns {
+    display: flex;
+    justify-content: space-between; /* Create space between columns */
+}
+/* CSS for each column */
+.column {
+    flex: 1; /* Each column takes up an equal amount of space */
+    padding: 10px; /* Add spacing around the text */
+    background-color: #FFECCB; /* Background color for columns */
+    margin: 20px 100px 20px 100px; /* Add margin for spacing */
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    font-size: 30px; /* Set font size to 30px */
+    line-height: 60px; /* Set space between lines */
+}
+
+.columns div::after {
+    content: "";
+    display: block;
+    width: 100%; /* Adjust the width of the underline as needed */
+    height: 3px; /* Adjust the thickness of the underline as needed */
+    background-color: #000307; /* Color of the underline */
+}
+
+.main-content {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.main-content div {
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    font-size: 50px; /* Set font size to 50px */
+    color: #f39c12;
+    margin: 50px 0 50px 100px; /* Set the margin left top and bottom */ 
+}
+
+.main-content div::after {
+    content: "";
+    display: block;
+    width: 100%; /* Adjust the width of the underline as needed */
+    height: 3px; /* Adjust the thickness of the underline as needed */
+    background-color: #000307; /* Color of the underline */
+}
+
+.main-content_underline {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.main-content_underline div {
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    font-size: 35px; /* Set font size to 35px */
+    color: #8A7356;
+    margin: 50px 0 50px 100px; /* Set the margin left top and bottom */ 
+    width: 90%;
+    border-bottom: 1px solid #8A7356;
+}
+
+.main-big-content {
+    color: #000307; /* Text color */
+    background-color: #FFECCB; /* Background color */
+    padding: 20px; /* Add padding for spacing */
+    margin: 20px 100px 20px 100px; /* Add margin for spacing */
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    font-size: 30px; /* Set font size to 30px */
+    line-height: 60px; /* Set space between lines */
+}
+
+.rounded-button {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.rounded-button button {
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    font-size: 35px; /* Set font size to 35px */
+    color: #8A7356;
+    margin: 50px 0 50px 100px; /* Set the margin left top and bottom */ 
+    padding: 40px 100px 40px 100px;
+    border-radius: 20px; /* Make the corners rounded */
+}
+
+.rounded-button button:hover {
+    background-color: #6B5B3E; /* Darker brown color on hover */
+    color: white; /* Text color on hover */
+    transition: background-color 0.5s; /* Add a transition effect */
+}
+
+#cart-slide {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s;
+    overflow-y: scroll;
+}
+
+#cart-content {
+    padding: 20px;
+}
+
+/* Add a media query for screens for mobile devices */
+@media (max-width: 768px) {
+    /* Modify styles for smaller screens here */
+    header {
+        padding: 20px 0;
+    }
+    .company-name, .empty {
+        margin: 0 5px;
+        font-size: 16px;
+    }
+    .menu a {
+        margin: 5px;
+        font-size: 16px;
+    }
+}
+
